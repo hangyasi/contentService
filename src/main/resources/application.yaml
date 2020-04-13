@@ -1,0 +1,23 @@
+storage:
+  uploadDir: C:\Zoli\suli\szakdoga
+
+name-server:
+  url: http://localhost:8080/services/heartbeat
+  local-server:
+    name: contentHandler
+    ip-address: localhost
+    port: 8081
+server:
+  port: 8081
+
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
